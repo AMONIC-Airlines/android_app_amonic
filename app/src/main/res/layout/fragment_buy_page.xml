@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyPageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background_sign"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:text="@string/select_where_fly" />
+
+            <EditText
+                android:id="@+id/editTextWhereBuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:elevation="5dp"
+                android:hint="@string/where"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textColorHint="#3E2723"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextWhereToBuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="@string/where_to"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:textColorHint="#3E2723"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/editTextDateBuy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="@string/dd_mm_yyyy"
+                android:inputType="date"
+                android:elevation="5dp"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColorHint="#3E2723"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/buttonDateBuy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="11sp"
+                android:textColor="#000"
+                android:text="@string/date" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextNumberPassengerBuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_background"
+            android:ems="10"
+            android:hint="@string/count_of_passengers"
+            android:inputType="number"
+            android:elevation="5dp"
+            android:padding="10dp"
+            android:textColorHint="#3E2723"
+            android:textSize="15sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchBusinessBuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:text="@string/bussines" />
+
+        <Button
+            android:id="@+id/buttonSubmitBuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_button"
+            android:layout_margin="30dp"
+            android:textSize="11sp"
+            android:textColor="#000"
+            android:text="@string/submit" />
+
+    </LinearLayout>
+
+</FrameLayout>

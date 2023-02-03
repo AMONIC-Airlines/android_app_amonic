@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBFCFB"
+    tools:context=".IntroActivity">
+
+    <ImageView
+        android:id="@+id/introImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/intro_activity"
+        android:contentDescription="@string/app_name" />
+
+    <Button
+        android:id="@+id/signInButtonIntro"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="#000"
+        android:background="@drawable/background_button"
+        android:text="@string/sign_in"
+        app:layout_constraintBottom_toTopOf="@+id/signUpButtonIntro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/signUpButtonIntro"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="#000"
+        android:background="@drawable/background_button"
+        android:text="@string/sign_up"
+        app:layout_constraintBottom_toBottomOf="@+id/introImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

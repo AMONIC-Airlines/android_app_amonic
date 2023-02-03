@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutCompanyActivity"
+    android:padding="20dp"
+    android:background="@drawable/background_one">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/background_sign"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="      AMONIC Airlines — это новая авиакомпания,
+базирующаяся в Абу-Даби, ОАЭ, которая пытается предложить вариант
+полета тем, кто ведет веселый и активный образ жизни, предлагая
+новые самолеты, привлекательные тарифы, первоклассный сервис и
+множество интересных инновационных удобств.\n\n
+    Мы планируем заново изобрести региональные авиаперевозки в соответствии с нашим имиджем.\n\n
+    Миссия AMONIC Airlines состоит в том, чтобы связать людей с тем, что важно
+в их жизни, с помощью удобных, надежных и недорогих авиаперелетов.\n\n
+    Сохраняя статус самой молодой и динамичной авиакомпании в регионе, AMONIC
+Airlines делает полеты более увлекательными."
+                android:textColor="#FFFFFF"
+                android:lineHeight="25dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
