@@ -1,4 +1,4 @@
-package com.example.amonic
+package com.example.amonic.fragments
 
 import android.app.DatePickerDialog
 import android.os.Bundle

@@ -6,6 +6,9 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
+import com.example.amonic.fragments.BuyPageFragment
+import com.example.amonic.fragments.MainPageFragment
+import com.example.amonic.fragments.ProfilePageFragment
 
 class MainActivity : AppCompatActivity() {
 
